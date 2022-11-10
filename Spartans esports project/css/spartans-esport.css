@@ -75,7 +75,7 @@
   
   .navbar .nav-link {
     padding: 0.5rem 0.25rem;
-    color: #888;
+    color: #0b111d;
   }
   
   .navbar .nav-link:hover,
@@ -196,7 +196,7 @@
 
 .text{
   font-size: 13px;
-  color: #545454;
+  color: #0b111d;
   line-height: 30px;
   text-align: justify;
   margin-bottom: 40px;
