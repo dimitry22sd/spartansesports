@@ -233,3 +233,18 @@
       padding: 60px;
   }
 }
+
+/* EXTRA */
+.come-in{
+  animation: come-in 1.5s ease forwards;
+}
+.come-in:nth-child(even) {
+	transform: translateX(150px);
+}
+.come-in:nth-child(odd) {
+	transform: translateX(-150px);
+}
+
+@keyframes come-in {
+  to { transform: translateX(0); }
+}
