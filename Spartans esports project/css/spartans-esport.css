@@ -1,32 +1,10 @@
 
-  #logo{
-    width: 100px;
-    height: 100px;
-    margin-top: 30px;
-    animation-name: spin;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-      transform-style: preserve-3d;
-      animation-direction: normal;
-  }
-  
-  @keyframes spin {
-    from {
-      transform: rotateY(0deg);
-    }
-    to {
-      transform: rotateY(360deg);
-    }
-  }
-
   body {
-    background: #19191f  url(https://i.imgur.com/kOE0l2g.jpg);
+    background: #19191f  url(../images/spartansbackground.jpg);
     background-position:center top;
     margin:0;
     color: #fff;
     background-repeat: no-repeat;
-    font-family: roboto, helvetica, sans-serif;
   }
   
   font {
@@ -40,7 +18,7 @@
     z-index: 9999;
     top:0;
     width:100%;
-    background: url(https://i.imgur.com/8Bx1s7S.png);
+    background: url(../images/spartansbackground.jpg);
     background-size: 200px 100%;
     height:200px;
     font-weight:100;
@@ -53,7 +31,7 @@
   
   header li.logo {
     color:#fff;
-    background: url(https://i.imgur.com/mFI4Wku.png);
+    background: url(../images/spartanslogo.jpg);
     background-size: 80px 80px;
     background-position: center left;
     background-repeat: no-repeat;
@@ -173,7 +151,7 @@
   }
   
   footer .container {
-    background: url(https://i.imgur.com/PgTh4HF.png);
+    background: url(../images/welcomespartans.png);
     background-size: 100% auto;
     height:500px;
   }
