@@ -192,10 +192,11 @@
   margin-bottom: 30px;
   font-size: 30px;
   font-weight: 900;
+  color: #0b111d;
 }
 
 .text{
-  font-size: 13px;
+  font-size: 20px;
   color: #0b111d;
   line-height: 30px;
   text-align: justify;
@@ -205,8 +206,7 @@
 .skills{
   display: flex;
   justify-content: space-between;
-  font-weight: 700;
-  font-size: 13px;
+  font-size: 20px;
   color: #971a1d;
 }
 
