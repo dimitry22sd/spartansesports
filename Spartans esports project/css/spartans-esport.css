@@ -1,8 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-} 
-
 
   #logo{
     width: 100px;
@@ -15,11 +10,6 @@
       transform-style: preserve-3d;
       animation-direction: normal;
   }
-
-  .logo-text {
-    margin-left: -600px;
-    font-size: 30px;
-  }
   
   @keyframes spin {
     from {
@@ -30,211 +20,189 @@
     }
   }
 
-
-  /*nav bar*/
-  a {
-    text-decoration: none;
+  body {
+    background: #19191f  url(https://i.imgur.com/kOE0l2g.jpg);
+    background-position:center top;
+    margin:0;
+    color: #fff;
+    background-repeat: no-repeat;
+    font-family: roboto, helvetica, sans-serif;
   }
   
-  ul {
-    margin: 0;
-    padding: 0;
+  font {
+    color: #e32f21;
   }
   
   header {
-    height: 80px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    border-bottom: 1px solid #ccc;
-    color: #0b111d;
+    width:100%;
+    position:fixed;
+    left:0;
+    z-index: 9999;
+    top:0;
+    width:100%;
+    background: url(https://i.imgur.com/8Bx1s7S.png);
+    background-size: 200px 100%;
+    height:200px;
+    font-weight:100;
   }
   
-  .nav-toggler,
-  .nav-toggler-label {
-    display: none;
+  header ul {
+    padding:0;
+    list-style: none;
   }
   
-  .logo {
-    font-size: 1.5rem;
-  }
-  
-  nav {
-    position: relative;
-    line-height: 80px;
-  }
-  
-  .navbar {
-    display: flex;
-    list-style-type: none;
-  }
-  
-  .navbar .nav-item {
-    margin: 0 0.5rem;
-  }
-  
-  .navbar .nav-link {
-    padding: 0.5rem 0.25rem;
-    color: #0b111d;
-  }
-  
-  .navbar .nav-link:hover,
-  .navbar .nav-link.active {
-    color: #0b111d;
-  }
-  
-  #underline {
-    position: absolute;
-    bottom: 0;
-    height: 5px;
-    background-color: #333;
-    width: 65px;
-    border-radius: 5px 5px 0 0;
-    transition: 0.3s;
-  }
-  
-  @media screen and (max-width: 1300px) {
-    #underline {
-      display: none;
-    }
-    header {
-      position: relative;
-    }
-    .nav-toggler-label {
-      display: block;
-      position: absolute;
-      top: 0;
-      right: 1rem;
-      display: flex;
-      align-items: center;
-      height: 100%;
-      cursor: pointer;
-    }
-  
-    nav {
-      position: absolute;
-      top: 100%;
-      width: 100%;
-      background-color: #fafbfd;
-      line-height: 40px;
-      transform: scale(1, 0);
-      transform-origin: top;
-      transition: 0.3s;
-    }
-  
-    .nav-toggler:checked ~ nav {
-      transform: scale(1, 1);
-    }
-  
-    .navbar {
-      display: block;
-      width: 100%;
-    }
-  
-    .navbar .nav-item {
-      margin: 0;
-    }
-  
-    .navbar .nav-link {
-      display: block;
-      padding-left: 1rem;
-      width: 100%;
-    }
-  
-    .navbar .nav-link:hover,
-    .navbar .nav-link.active {
-      background-color: #ffffff;
-    }
-   #logo {
-    display: none;
-   }
-
-    .logo-text {
-      margin-right: -200px;
-    }
-  }
-
-  /*here section*/
-  .hero {
-    height: calc(100vh - 65px);
-    background-image: url(../images/spartansbackground.jpg);
+  header li.logo {
+    color:#fff;
+    background: url(https://i.imgur.com/mFI4Wku.png);
+    background-size: 80px 80px;
+    background-position: center left;
     background-repeat: no-repeat;
+    font-size:48px;
+    float:left;
+    line-height: 95px;
+    height:95px;
+    padding-left:95px;
+    margin-left: 25px;
+  }
+  
+  .button {
+    float:right;
+    height:45px;
+    line-height:45px;
+    color: #fff;
+    padding:0 35px;
+    background: #e32f21; 
+    border-radius:3px;
+    margin:25px 0;
+    margin-right: 25px;
+  }
+  
+  .container {
+    width:100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    display: table;
+  }
+  
+  .container-small {
+    width:33%;
+    margin: 0 auto;
+    display: table;
+  }
+  
+  #video.container {
+    background: url(https://i.imgur.com/VWYuxrA.jpg) center center;
     background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
+    height:540px;
+    position: relative;
+    color: #fff;
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+  
+  .floating-container {
+    position: absolute;
+    bottom:0;
+    left:0;
+    padding:50px;
+    font-style: italic;
+  }
+  
+  .floating-container h1 {
+    font-size: 82px;
+    margin: 0px;
+    line-height: 72px;
+    font-style: normal;
+  }
+  
+  .floating-container font {
+    text-shadow: 0 0 2px #e32f21;
+  }
+  
+  .floating-container p {
+    font-size: 40px;
+    margin: 5px 0;
+    line-height: 35px;
+    padding-left: 1px;
+  }
+  
+  #sponsors {
+    background: rg;
+  }
+  
+  #sponsors h1 {
     text-align: center;
-    background-attachment: fixed;
-}
-
-.hero h1 {
-    font-size: 1.8rem;
-    font-weight: 800;
-  margin-top: 80px;
-  line-height: 50px;
-}
-
-/*small description ABOUT spartans*/
-.about-section{
-  background: url(../images/spartanslogo.jpg) no-repeat left;
-  background-size: 30%;
-  overflow: hidden;
-  padding: 100px 0;
-}
-
-.inner-container{
-  width: 55%;
-  float: right;
-  padding: 150px;
-}
-
-.inner-container h1{
-  margin-bottom: 30px;
-  font-size: 30px;
-  font-weight: 900;
-}
-
-.text{
-  font-size: 13px;
-  color: #0b111d;
-  line-height: 30px;
-  text-align: justify;
-  margin-bottom: 40px;
-}
-
-.skills{
-  display: flex;
-  justify-content: space-between;
-  font-weight: 700;
-  font-size: 13px;
-}
-
-@media screen and (max-width:1200px){
-  .inner-container{
-      padding: 80px;
+    font-size:55px;
+    margin: 45px 0 0 0;
   }
-}
-
-@media screen and (max-width:1000px){
-  .about-section{
-      background-size: 100%;
-      padding: 100px 40px;
+  
+  #sponsors img {
+    width:100%;
+    float:left;
+    margin-bottom: 25px;
   }
-  .inner-container{
-      width: 100%;
+  
+  #divisions .img-container {
+    width:33%;
+    float:left;
+    height: auto;
+    display: table;
+    overflow: hidden;
+    position: relative;
   }
-}
-
-@media screen and (max-width:600px){
-  .about-section{
-      padding: 0;
+  
+  #divisions .img-container img {
+    width:100%;
+    height: auto;
+    display:table;
+    -webkit-filter-: grayscale(0.7);
+    transition: .7s;
+    -webkit-transition: .7s;
+    transform: scale(1.035);
   }
-  .inner-container{
-      padding: 60px;
+  
+  #divisions .img-container img:hover {
+    transform: scale(1);
+    -webkit-filter-: grayscale(0);
   }
-}
-
-.about {
-  height: 100px;
-  width: 100%;
-}
+  
+  footer {
+    height: 500px;
+    margin-top:50px;
+    background: rgba(10,10,10,.8);
+  }
+  
+  footer .container {
+    background: url(https://i.imgur.com/PgTh4HF.png);
+    background-size: 100% auto;
+    height:500px;
+  }
+  
+  footer .container-small {
+    margin-top:100px;
+  }
+  
+  footer img {
+    height:150px;
+    margin: 75px auto 0;
+    display: block;
+  }
+  
+  footer a {
+    display:block;
+    text-align: center;
+    width:50%;
+    float:left;
+    color:#fff;
+    text-decoration: none;
+    font-weight:100;
+    font-size: 25px;
+    text-transform: uppercase;
+  }
+  
+  footer small {
+    text-align: center;
+    display:block;
+    margin-top:55px;
+    color: #e32f21;
+  }
